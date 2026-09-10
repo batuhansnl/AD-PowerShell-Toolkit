@@ -2,7 +2,24 @@
 
 Şirket bilgisayarlarında EXE ve Python çalıştırma kısıtlaması olan ortamlar için tasarlanmış, **sadece PowerShell** ile çalışan Active Directory red team araç takımı.
 
-## 🚀 Hızlı Başlangıç
+## 🛡️ Tek Tıkla Salt Okunur Güvenlik Denetimi & HTML Raporu
+
+Active Directory'ye **kesinlikle zarar vermeyen, hiçbir şeyi değiştirmeyen (salt okunur)** ve sonucu modern bir **HTML Dashboard** olarak raporlayan tek bağımsız script:
+
+```powershell
+# Canlı Active Directory denetimi yapıp HTML raporunu aç
+.\Invoke-ADAuditReport.ps1 -OpenReport
+
+# (İsteğe bağlı) Raporu belirli bir konuma kaydet
+.\Invoke-ADAuditReport.ps1 -OutputPath "C:\Temp\AD-Audit.html" -OpenReport
+
+# (Test amaçlı) AD olmayan bilgisayarda örnek veriyle test et
+.\Invoke-ADAuditReport.ps1 -DemoMode -OpenReport
+```
+
+---
+
+## 🚀 Hızlı Başlangıç (Tüm Toolkit)
 
 ```powershell
 # Tüm araçları yükle (tek komut)
